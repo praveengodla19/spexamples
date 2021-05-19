@@ -18,5 +18,10 @@ public class DemoController {
 	 public String hello() {
 		 return "Hello";
 	 }
+	 
+	 @GetMapping("/test1")
+	 public String hello1() {
+		 return "bye";
+	 }
 
 }
