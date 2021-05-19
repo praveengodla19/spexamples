@@ -2,6 +2,7 @@ package com.example.mvcdemo;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -12,5 +13,10 @@ public class DemoController {
 	    public String showLoginPage(){
 	        return "login";
 	    }
+	 
+	 @GetMapping("/test")
+	 public String hello() {
+		 return "Hello";
+	 }
 
 }
